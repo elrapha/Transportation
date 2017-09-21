@@ -1,5 +1,5 @@
---temp-output:c:\users\elrapha\documents\visual studio 2015\Projects\Transportation\src\Transportation\obj\Debug\netcoreapp1.0\
---out:c:\users\elrapha\documents\visual studio 2015\Projects\Transportation\src\Transportation\bin\Debug\netcoreapp1.0\Transportation.dll
+--temp-output:C:\Users\ELRAPHA\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation\obj\Debug\netcoreapp1.0\
+--out:C:\Users\ELRAPHA\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation\bin\Debug\netcoreapp1.0\Transportation.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -93,13 +93,13 @@
 --reference:C:\Users\ELRAPHA\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\ELRAPHA\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll
 --reference:C:\Users\ELRAPHA\.nuget\packages\System.Xml.XmlDocument\4.3.0\ref\netstandard1.3\System.Xml.XmlDocument.dll
-c:\users\elrapha\documents\visual studio 2015\Projects\Transportation\src\Transportation\Boat.cs
-c:\users\elrapha\documents\visual studio 2015\Projects\Transportation\src\Transportation\Car.cs
-c:\users\elrapha\documents\visual studio 2015\Projects\Transportation\src\Transportation\FClass.cs
-c:\users\elrapha\documents\visual studio 2015\Projects\Transportation\src\Transportation\Plane.cs
-c:\users\elrapha\documents\visual studio 2015\Projects\Transportation\src\Transportation\Program.cs
-c:\users\elrapha\documents\visual studio 2015\Projects\Transportation\src\Transportation\Interfaces\IVehicle.cs
-c:\users\elrapha\documents\visual studio 2015\Projects\Transportation\src\Transportation\Interfaces\IWriter.cs
-c:\users\elrapha\documents\visual studio 2015\Projects\Transportation\src\Transportation\Properties\AssemblyInfo.cs
-c:\users\elrapha\documents\visual studio 2015\Projects\Transportation\src\Transportation\Services\ConsoleWriter.cs
-c:\users\elrapha\documents\visual studio 2015\Projects\Transportation\src\Transportation\Services\JsonFileWriter.cs
+C:\Users\ELRAPHA\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation\Boat.cs
+C:\Users\ELRAPHA\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation\Car.cs
+C:\Users\ELRAPHA\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation\FlyingClass.cs
+C:\Users\ELRAPHA\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation\Plane.cs
+C:\Users\ELRAPHA\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation\Program.cs
+C:\Users\ELRAPHA\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation\Interfaces\IVehicle.cs
+C:\Users\ELRAPHA\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation\Interfaces\IWriter.cs
+C:\Users\ELRAPHA\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation\Properties\AssemblyInfo.cs
+C:\Users\ELRAPHA\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation\Services\ConsoleWriter.cs
+C:\Users\ELRAPHA\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation\Services\JsonFileWriter.cs

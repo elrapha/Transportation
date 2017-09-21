@@ -6,13 +6,22 @@ namespace Transportation
 {
     public class Car : IVehicle
     {
-        public Car(string registration, int enginePower, int maxSpeed, string color, string vehicleType)
+        private readonly IWriter _logger;
+
+        public Car(string registration, int enginePower, int maxSpeed,
+            string color, string vehicleType) : this(registration, enginePower, maxSpeed, color, vehicleType, null)
+        {
+        }
+
+        public Car(string registration, int enginePower, int maxSpeed,
+            string color, string vehicleType, IWriter writer)
         {
             Registration = registration;
             EnginePower = enginePower;
             MaxSpeed = maxSpeed;
             Color = color;
             VehicleType = vehicleType;
+            _logger = writer;
         }
 
         public string Registration { get; }
@@ -60,15 +69,16 @@ namespace Transportation
         {
             return
                 $@"License Plate: {Registration}
-Engine Power: {EnginePower}
-Maximum Speed: {MaxSpeed}
+Engine Power: {EnginePower} kW
+Maximum Speed: {MaxSpeed} km/h
 Color: {Color}
 Vehicle Type: {VehicleType}";
         }
 
-        public void Drive(IWriter writer)
+        public void Drive()
         {
-            writer.Write($"Driving Car with Plate:{Registration}");
+//          log to console 
+            _logger?.Write($"Driving Car with Plate:{Registration}");
         }
 
         public static implicit operator string(Car v)

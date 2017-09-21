@@ -5,9 +5,16 @@ namespace Transportation
 {
     public class Plane : IVehicle
     {
-       
+        private readonly IWriter logger;
+
         public Plane(string registration, int endinePower, int wingSpan, int loadCapacity, int netWeight,
-            FlyingClass flyingClass)
+            FlyingClass flyingClass) :
+            this(registration, endinePower, wingSpan, loadCapacity, netWeight, flyingClass, null)
+        {
+        }
+
+        public Plane(string registration, int endinePower, int wingSpan, int loadCapacity, int netWeight,
+            FlyingClass flyingClass, IWriter writer)
         {
             Registration = registration;
             EnginePower = endinePower;
@@ -15,6 +22,7 @@ namespace Transportation
             LoadCapacity = loadCapacity;
             NetWeight = netWeight;
             FlyingClass = flyingClass;
+            logger = writer;
         }
 
         public string Registration { get; set; }
@@ -24,26 +32,29 @@ namespace Transportation
         public int WingSpan { get; set; }
         public int LoadCapacity { get; set; }
         public FlyingClass FlyingClass { get; set; }
+
         public override string ToString()
         {
             return
                 $@"Registration: {Registration}
-Engine Power: {EnginePower}
-Maximum Speed: {MaxSpeed}
-Net Weight: {NetWeight}
-Wing Span: {WingSpan}
-Load Capacity: {LoadCapacity}
+Engine Power: {EnginePower} kW
+Maximum Speed: {MaxSpeed} knot/h
+Net Weight: {NetWeight} t
+Wing Span: {WingSpan} m
+Load Capacity: {LoadCapacity}t
 Flight Class: {FlyingClass}";
-
         }
 
 
-        public void Fly(IWriter writer)
+        public void Fly()
         {
-            writer.Write($"Flying Plane with Plate:{Registration}");
+            // logic for flying goes here
+            logger?.Write($"Flying Plane with Plate:{Registration}");
         }
 
-        public static implicit operator string(Plane v) { return v.ToString(); }
-
+        public static implicit operator string(Plane v)
+        {
+            return v.ToString();
+        }
     }
 }
